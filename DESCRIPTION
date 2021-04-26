@@ -1,5 +1,5 @@
 Package: Software.Draft
-Title: Spike Of The Week
+Title: SpikeOfTheWeek
 Version: 0.0.0.9000
 Authors@R: 
     person("Bianca", "Ebanks",
@@ -7,7 +7,7 @@ Authors@R:
            email = "biancasayshi@yahoo.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: This function will identify the timeframe with the highest 
-             hits in the last week and pull tweets associated with that day.
+             hits in the last week.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

@@ -1,7 +1,7 @@
-#' Spike Of The Week
+#' SpikeOfTheWeek
 #'
 #' Identify the time frame with the highest hits in the last week at
-#' a chosen location and pull tweets associated with that day.
+#' a chosen location.
 #'
 #' Details
 #'
@@ -10,18 +10,17 @@
 #' @param y is a location
 #' @param x is a keyword
 #'
-#' @return The time of the highest hits in the last week for a chosen location
-#'         and tweets associated.
+#' @return The time of the highest hits in the last week for a chosen location.
 #'
 #' @examples
-#' spike_this_week(x, "US")
+#' spike_this_week("pies", "US")
 #'
 #' @export
 #'
 
-Spike_this_week = function(keyword = x, geo = y){
+Spike_this_week = function(keyword = "new york knicks", "US"){
 
-  nyk = gtrends("new york knicks", geo = "US", time = "now 7-d")
+  nyk = grtends::gtrends("new york knicks", geo = "US", time = "now 7-d")
 
   top_hits = nyk [[1]] %>% arrange(desc(hits))
 }
