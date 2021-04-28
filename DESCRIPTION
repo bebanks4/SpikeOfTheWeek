@@ -1,11 +1,10 @@
-Package: Software.Draft
+Package: SpikeOfTheWeek
 Title: SpikeOfTheWeek
 Version: 0.0.0.9000
 Authors@R: 
     person("Bianca", "Ebanks",
            role = c("aut", "cre"),
-           email = "biancasayshi@yahoo.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "biancasayshi@yahoo.com"
 Description: This function will identify the timeframe with the highest 
              hits in the last week.
 License: GPL-3
