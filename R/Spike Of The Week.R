@@ -1,14 +1,14 @@
 #' SpikeOfTheWeek
 #'
+#' Google Trends Hits Data
+#'
 #' Identify the time frame with the highest hits in the last week at
 #' a chosen location.
 #'
-#' Details
-#'
 #' @author Bianca Ebanks
 #'
-#' @param y is a location
-#' @param x is a keyword
+#' @param keyword a term that the user wants to search
+#' @param geo a location the user wants to search
 #'
 #' @return The time of the highest hits in the last week for a chosen location.
 #'
@@ -18,11 +18,15 @@
 #' @export
 #'
 
-Spike_this_week = function(keyword = "new york knicks", "US"){
+spike_this_week = function(keyword = "new york knicks", geo = "US"){
 
-  nyk = grtends::gtrends("new york knicks", geo = "US", time = "now 7-d")
+  #search Google trends for user term
 
-  top_hits = nyk [[1]] %>% arrange(desc(hits))
+  nyk = gtrendsR::gtrends(keyword, geo = geo, time = "now 7-d")
+
+  top_hits = nyk[[1]] %>% dplyr::arrange(desc(hits))
+
+  assign("spike_this_week", top_hits, envir = .GlobalEnv)
 }
 
 

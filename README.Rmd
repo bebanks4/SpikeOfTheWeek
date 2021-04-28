@@ -21,7 +21,7 @@ Install from GitHub with the following code:
 if (!requireNamespace("devtools", quietly = TRUE)) {
   install.packages("devtools")
 }
-devtools::install_github("kurtawirth/botscan")
+devtools::install_github("bebanks4/SpikeOfTheWeek")
 ```
 
 This package connects <code>botometer</code> to <code>rtweet</code>. As a 
