@@ -10,7 +10,7 @@
 #' @param keyword a term that the user wants to search
 #' @param geo a location the user wants to search
 #'
-#' @return The time of the highest hits in the last week for a chosen location.
+#' @return The highest hits in the last week for a chosen keyword and location.
 #'
 #' @examples
 #' spike_this_week("pies", "US")

@@ -5,8 +5,8 @@ Authors@R:
     person("Bianca", "Ebanks",
            role = c("aut", "cre"),
            email = "biancasayshi@yahoo.com"
-Description: This function will identify the timeframe with the highest 
-             hits in the last week.
+Description: This function will identify the highest hits in
+             the last week for a given keyword and location.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
