@@ -24,9 +24,15 @@ spike_this_week = function(keyword = "new york knicks", geo = "US"){
 
   nyk = gtrendsR::gtrends(keyword, geo = geo, time = "now 7-d")
 
+  #search Google trends for user term and location within the last 7 days
+
   top_hits = nyk[[1]] %>% dplyr::arrange(desc(hits))
 
+  #arrange hits from highest to lowest
+
   assign("spike_this_week", top_hits, envir = .GlobalEnv)
+
+  #insert spike_this_week into your environment
 }
 
 
